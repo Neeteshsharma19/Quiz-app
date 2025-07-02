@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Quiz Game</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h2>Welcome to the Quiz!</h2>
+      <p>📝 Instructions:</p>
+      <ul>
+        <li>Each question may be single-select, multi-select, or fill-in-the-blank.</li>
+        <li>Math questions are also included.</li>
+        <li>You will see your score and name at the end.</li>
+      </ul>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-section" style="display: none;">
+      <div id="question-container"></div>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div id="result-screen" style="display: none;">
+      <div id="score-container"></div>
+      <button id="retry-btn">Try Again</button>
+    </div>
+  </div>
+  <script src="script2.js"></script>
+</body>
+</html>
